@@ -1,20 +1,15 @@
 #include <stdio.h>
 /**
-*main - Here's a c program that prints the size of various types on the computer it is compiled and run on
+*main - display size of something
+*
 *Return: Always 0 (success)
 */
 int main(void)
 {
-	char a;
-	int b;
-	long int c;
-	long long int d;
-	float e;
-
-	printf("Size of char: %lu byte(s)\n", sizeof(a));
-	printf("Size of int: %lu byte(s)\n", sizeof(b));
-	printf("Size of long int: %lu byte(s)\n", sizeof(c));
-	printf("Size of long long int: %lu byte(s)\n", sizeof(d));
-	printf("Size of float: %lu byte(s)\n", sizeof(e));
+	printf("Size of char: %lu byte(s)\n", sizeof(char));
+	printf("Size of int: %lu byte(s)\n", sizeof(int));
+	printf("Size of long int: %lu byte(s)\n", sizeof(long int));
+	printf("Size of long long int: %lu byte(s)\n", sizeof(long long int));
+	printf("Size of float: %lu byte(s)\n", sizeof(float);
 	return (0);
 }
