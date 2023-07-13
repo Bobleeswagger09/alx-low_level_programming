@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
-*main - Entery point
-*Return: Always 1 (success)
+*main - A c program thats print a line to the standard error
+*Return: 1 (success)
 */
 int main(void)
 {
