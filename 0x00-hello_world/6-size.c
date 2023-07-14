@@ -1,16 +1,15 @@
 #include <stdio.h>
-#include <inttypes.h>
 /**
-*main - display size of something
+*main - display sixe of something
 *
-*Return: Always 0 (success)
+*Return: Always 0.
 */
 int main(void)
 {
-	printf("Size of char: %ld byte(s)\n", sizeof(char));
-	printf("Size of int: %ld byte(s)\n", sizeof(int));
-	printf("Size of long int: %ld byte(s)\n", sizeof(long int));
-	printf("Size of long long int: %ld byte(s)\n", sizeof(long long int));
-	printf("Size of float: %ld byte(s)\n", sizeof(float));
+	printf("Size of char: %lu byte(s)\n", sizeof(char));
+	printf("Size of int: %lu byte(s)\n", sizeof(int));
+	printf("Size of long int %lu byte(s)\n", sizeof(long int));
+	printf("Size of long long int %lu byte(s)\n", sizeof(long long int));
+	printf("Size of Float %lu byte(s)\n", sizeof(float));
 	return (0);
 }
