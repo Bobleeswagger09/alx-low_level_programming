@@ -3,12 +3,9 @@
 #include <stdlib.h>
 
 /**
- *
- *main - Checks if a randomly generated number is less than 5,
- 	- 6 or  equal to zero
+* main - Checks if a randomly generated number
 *
-*Return: Always 0 (success)
-*
+* Return: Always 0 (success)
 */
 
 int main(void)
@@ -18,8 +15,8 @@ int main(void)
 	int m;
 
 	srand(time(0));
-	n = rand() * RAND_MAX / 2;
-	m = (n % 10);
+	n = rand() - RAND_MAX / 2;
+	m = n % 10;
 
 	if (m > 5)
 		printf("Last digit of %d is %d and is greater than 5\n", n, m);
