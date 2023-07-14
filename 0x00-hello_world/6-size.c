@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-*main - display sixe of something
+*main - main function
 *
 *Return: Always 0.
 */
@@ -10,6 +10,6 @@ int main(void)
 	printf("Size of int: %lu byte(s)\n", sizeof(int));
 	printf("Size of long int %lu byte(s)\n", sizeof(long int));
 	printf("Size of long long int %lu byte(s)\n", sizeof(long long int));
-	printf("Size of Float %lu byte(s)\n", sizeof(float));
+	printf("Size of float %lu byte(s)\n", sizeof(float));
 	return (0);
 }
