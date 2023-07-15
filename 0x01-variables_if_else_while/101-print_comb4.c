@@ -1,13 +1,17 @@
 #include <stdio.h>
 /**
 * main - prints all possible different combinations of three digits
+* Return: Always 0 (success)
 */
 
 int main(void)
 {
 	int num1;
+
 	int num2;
+
 	int num3;
+
 	for (num1 = 0; num1 < 8; num1++)
 	{
 		for (num2 = num1 + 1; num2 < 9; num2++)
