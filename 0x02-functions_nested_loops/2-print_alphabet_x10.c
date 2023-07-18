@@ -1,8 +1,6 @@
 #include "main.h"
 /**
-* 2-print_alphabet_x10 - prints Alphabet 10 times
-*
-* Return: Always 0 9success)
+* print_alphabet_x10 - prints Alphabet 10 times
 */
 
 void print_alphabet_x10(void)
@@ -15,7 +13,7 @@ void print_alphabet_x10(void)
 
 		for (j = 97; j <= 122; j++)
 		{
-			_putchat('j');
+			_putchar('j');
 		}
 		_putchar('\n');
 	}
