@@ -1,4 +1,4 @@
-/**
+/*
 * File: 101- natural.c
 * Auth: vincent kip
 */
@@ -13,21 +13,15 @@
 * Return: Always 0
 */
 
-int multiple_sum(int max)
-{
-	int ret = 0;
-
-	for (int i = 0; i < max; i++)
-	{
-		if ((i % 3) == 0 || ((i % 5) == 0))
-		{
-			ret += i;
-		}
-
-	}
-}
-
 int main(void)
 {
-	printf("%d\n", multiple_sum(1024));
+	int i, sum  = 0;
+
+	for (i = 0; i < 1024; i++)
+	{
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum += i;
+	}
+	printf("%d\n", sum);
+	return (0);
 }
