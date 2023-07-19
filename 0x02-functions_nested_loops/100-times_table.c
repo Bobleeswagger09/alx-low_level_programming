@@ -18,7 +18,7 @@ void print_to_98(int n)
 		{
 			k = j * i;
 
-			printf(j == 0 ? "%d" : k < 10 ? ", %d" : k < 100 ? "%d%d" : ", %d%d%d", k / 100, (k / 10) % 10, k % 10);
+			printf(j == 0 ? "%d" : k < 10 ? "%d, " : k < 100 ? "%d%d, " : "%d%d%d, ", k / 100, (k / 10) % 10, k % 10);
 		}
 		printf("\n");
 	}
