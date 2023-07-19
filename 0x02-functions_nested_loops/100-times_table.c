@@ -1,21 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* main - check code
-*
 * print_to_98 - prints the n times table, starting with 0
 *
 * @n: prints from this number
 *
 * Return: Always 0 (Success)
 */
-
-int main(void)
-{
-	print_times_table(3);
-	_putchar('\n');
-return (0);
-}
 
 void print_times_table(int n)
 {
