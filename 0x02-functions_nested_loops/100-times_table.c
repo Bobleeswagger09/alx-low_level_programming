@@ -8,18 +8,37 @@
 
 void print_to_98(int n)
 {
-	int i, j, k;
+	int i;
 
-	if (n < 0 || n > 15)
-		return;
-	for  (i = 0; i <= n; i++)
+	if (n >= 0 && n <= 98)
 	{
-		for (j = 0 ; j <= n; j++)
+		for (i = n; i <= 98; i++)
 		{
-			k = j * i;
-
-			printf(j == 0 ? "%d" : k < 10 ? "%d, " : k < 100 ? "%d%d, " : "%d%d%d, ", k / 100, (k / 10) % 10, k % 10);
+			printf("%d", i);
+			if (i != 98)
+				printf(", ");
 		}
 		printf("\n");
 	}
+	else if (n < 0)
+	{
+		for (i = n; i <= 98; i++)
+		{
+			printf("%d", i);
+			if (i != 98)
+				printf(", ");
+		}
+		printf("\n");
+	}
+	else if (n > 98)
+		for (i = n; i >= 98; i--)
+		{
+			printf("%d", i);
+			if (i != 98)
+				printf(", ");
+		}
+		printf("\n");
+	}
+	else if (n == 98)
+		printf("%d\n", n);
 }
