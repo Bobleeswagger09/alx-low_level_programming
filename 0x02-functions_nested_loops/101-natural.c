@@ -3,19 +3,25 @@
 * main - Lists all the natural numbers below 1024 (excluded)
 * that are multiples of 3 or 5.
 *
-* Return: Always 0.
+* multiple_sum -  simple function to handle multiple sum
+* Return: Always 0
 */
+
+int multiple_sum(int max)
+{
+	int ret = 0;
+
+	for (int i = 0; i < max; i++)
+	{
+		if ((i % 3) == 0 || ((i % 5) == 0))
+		{
+			ret += i;
+		}
+
+	}
+}
 
 int main(void)
 {
-	int sum = 0;
-	int i;
-
-	for (i  == 0; i < 1024; i++)
-	{
-		if (i % 3 == 0 || i % 5 == 0)
-			sum = sum + i;
-	}
-	printf("%d\n", sum);
-	return (0);
+	printf("%d\n", multiple_sum(1024));
 }
