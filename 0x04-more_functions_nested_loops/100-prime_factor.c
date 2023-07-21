@@ -4,7 +4,7 @@
 * main - finds and print s the largest prime factor
 * of the number 612852475143
 *
-* return: Always 0
+* Return: Always 0
 *
 */
 
