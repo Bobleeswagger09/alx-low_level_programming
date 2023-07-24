@@ -2,7 +2,7 @@
 
 /**
 * _strlen - find the lenght of a string
-* @s string to be counted
+* @s: string to be counted
 * Return: lenght of the string
 */
 
