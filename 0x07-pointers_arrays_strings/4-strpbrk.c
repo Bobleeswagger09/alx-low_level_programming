@@ -10,9 +10,9 @@ char *_strpbrk(char *s, char *accept)
 		
 		while (*s)
 		{
-			for (int t = 0; accept[k]; k++)
+			for (int t = 0; accept[t]; t++)
 			{
-			if (*s == accept[k])
+			if (*s == accept[t])
 			return (s);
 			}
 		s++;
