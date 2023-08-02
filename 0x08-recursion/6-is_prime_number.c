@@ -1,9 +1,7 @@
 #include "main.h"
-
 int prime(int n, int i);
-
 /**
- * is_prime_number -  returns 1 if the input integer is a prime number, o therwise return 0
+ * is_prime_number - if prime return 0 else return 1
  * @n: number to calculate
  *
  * Return: 1 if n is a prime number, else return 0
@@ -14,7 +12,6 @@ int is_prime_number(int n)
 		return (0);
 	return (prime(n, n - 1));
 }
-
 /**
  * prime - calculates if a number is prime recursively
  * @n: number to calculate
