@@ -8,12 +8,13 @@
 *
 * @argv: augment vector; an array of strings that hold the cli augments
 *to a function before executing the code.
+* Return: 0
 */
 
 int main(int argc, char *argv[])
 {
 	(void) argc;
 
-	printf("%s", argv[0]);
+	printf("%s\n", argv[0]);
 	return (0);
 }
