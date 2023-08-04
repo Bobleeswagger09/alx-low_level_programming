@@ -33,24 +33,25 @@ int check_number(char *str)
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int count;
 	int str_to_int;
 	int result = 0;
 
-	i = 1;
+	count = 1;
 
-	while (i < argc)
+	while (count < argc)
 	{
-		if (check_number(argv[i]))
+		if (check_number(argv[count]))
 		{
-			str_to_int = atoi(argv[i]);
+			str_to_int = atoi(argv[count]);
 			result += str_to_int;
 		}
 		else
 		{
 			printf("Error\n");
+			return 	(1);
 		}
-		i++;
+		count++;
 	}
 	printf("%d\n", result);
 	return (0);
