@@ -34,22 +34,21 @@ int check_number(char *str)
 int main(int argc, char *argv[])
 {
 	int i;
-	int str_to_int;
+	int from_strTo_int;
 	int result = 0;
 
 	i = 1;
-
 	while (i < argc)
 	{
 		if (check_number(argv[i]))
 		{
-			str_to_int = atoi(argv[i]);
-			result += str_to_int;
+			from_strTo_int = atoi(argv[i]);
+			result += from_strTo_int;
 		}
 		else
 		{
 			printf("Error\n");
-			return 	(1);
+			return (1);
 		}
 		i++;
 	}
