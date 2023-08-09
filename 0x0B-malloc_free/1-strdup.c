@@ -5,7 +5,7 @@
 * _strdup - A function that create a space in memory and stores
 * a copy of a string in the memory.
 * @str: the string
-* Retutn: 0
+* Return: str_copy
 *
 */
 
