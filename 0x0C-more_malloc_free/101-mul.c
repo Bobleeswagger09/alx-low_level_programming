@@ -75,7 +75,7 @@ int main(int argc, char *argv[])
 	{
 		num1 = s1[len1] - '0';
 		move = 0;
-	for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
+		for (len2 = _strlen(s2) - 1; len2 >= 0; len2--)
 		{
 			num2 = s2[len2] - '0';
 			move += result[len1 + len2 + 1] + (num1 * num2);
