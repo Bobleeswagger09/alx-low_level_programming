@@ -12,7 +12,7 @@ int op_mod(int a, int b);
  * @b: The second number.
  *
  * Return: a + b
- */ 
+ */
 int op_add(int a, int b)
 {
 	return (a + b);
