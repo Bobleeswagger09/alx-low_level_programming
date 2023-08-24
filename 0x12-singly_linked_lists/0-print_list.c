@@ -9,21 +9,17 @@
 
 size_t print_list(const list_t *h)
 {
-	const list_t *curr_element = h;
+	const list_t *cur_node = h;
 	size_t c = 0;
 
-	while (curr_element != NULL)
+	while (cur_node != NULL)
 	{
-		if (curr_element->str != NULL)
-		{
-			printf("[%u] %s\n", curr_element->len, curr_element->str);
-		}
+		if (cur_node->str != NULL)
+			printf("[%u] %s\n", cur_node->len, cur_node->str);
 		else
-		{
 			printf("[0] (nil)\n");
-		}
 		c += 1;
-		curr_element = curr_element->next;
-		}
-		return (c);
+		cur_node = cur_node->next;
+	}
+	return (c);
 }
