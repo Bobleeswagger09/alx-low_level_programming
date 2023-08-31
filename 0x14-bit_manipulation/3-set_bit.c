@@ -7,6 +7,7 @@
  * @index: index to set bit at
  * Return: 1 on success, or -1 failure
  */
+
 int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int max_num = 0x01;
