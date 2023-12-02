@@ -38,21 +38,21 @@ void copy_filenormal(const char *src, const char *dest)
 	}
 
 
-	if (read_normal == -1)
+	if (OfDD == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't r from file %s\n", src);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 		exit(98);
 	}
 
 	if (close(OfDD) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't c OfDD %d\n", OfDD);
+		dprintf(STDERR_FILENO, "Error: Can't copy OfDD %d\n", OfDD);
 		exit(100);
 	}
 
 	if (close(TfDD) == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't c OfDD %d\n", TfDD);
+		dprintf(STDERR_FILENO, "Error: Can't copy OfDD %d\n", TfDD);
 		exit(100);
 	}
 }
