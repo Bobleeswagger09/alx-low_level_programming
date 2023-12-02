@@ -10,34 +10,24 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int open_fNormal, n_normal, rw_normal;
+	int file_openNormal, file_writeNormal, MYlen = 0;
 
 	if (!filename)
-	{
 		return (-1);
+
+	if (text_content != NULL)
+	{
+		for (MYlen = 0; text_content[MYlen];)
+			MYlen++;
 	}
 
-	if (text_content == NULL)
-	{
+	file_openNormal = open(filename, O_WRONLY | O_APPEND);
+	file_writeNormal = write(file_openNormal, text_content, MYlen);
+
+	if (file_writeNormal == -1 || file_writeNormal == -1)
 		return (-1);
-	}
 
-	open_fNormal = open(filename, O_WRONLY | O_APPEND);
-	if (open_fNormal == -1)
-	{
-		return (-1);
-	}
+	close(file_openNormal);
 
-	if (text_content)
-	{
-		for (n_normal = 0; text_content[n_normal]; n_normal++)
-		{
-			rw_normal = write(file_normal, text_content, n_normal);
-			if (rw_normal == -1)
-				return (-1);
-		}
-	}
-
-	close(open_fNormal);
-	return (-1);
+	return (1);
 }
