@@ -1,4 +1,5 @@
 #include "main.h"
+#define BUFFER_SIZE 1024
 
 /**
  * copy_filenormal - THis func copies the content of a file to another
