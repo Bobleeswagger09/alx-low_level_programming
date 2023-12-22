@@ -95,9 +95,7 @@ int main(int argc, char *argv[])
 		rKage = read(destF, bufferme, BUFFER_SIZE);
 		destF = open(argv[2], O_WRONLY | O_APPEND);
 
-	}
-	while (rKage > 0);
-	
+	} while (rKage > 0);
 	free(bufferme);
 	close_normal(srcF);
 	close_normal(destF);
